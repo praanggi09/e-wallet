@@ -1,7 +1,5 @@
 import "dart:async";
-
 import "package:e_wallet/shared/theme.dart";
-import 'package:e_wallet/ui/pages/onboarding_page.dart';
 import "package:flutter/material.dart";
 
 class SplashPage extends StatefulWidget {
@@ -17,13 +15,8 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     
-    Timer(const Duration(seconds: 3), (){
-      Navigator.push(
-        context, 
-        MaterialPageRoute(
-          builder: (context) => const OnboardingPage(),
-        ),
-      );
+    Timer(const Duration(seconds: 2), () {
+     Navigator.pushNamed(context, '/onboarding');
     });
   }
 
