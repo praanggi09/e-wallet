@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:e_wallet/shared/theme.dart';
 import 'package:e_wallet/ui/widgets/buttons.dart';
@@ -42,7 +41,9 @@ class SigUpSuccessPage extends StatelessWidget {
               width: 183,
               title: 'Get Started', 
               onPressed: (){
-
+                Navigator.pushNamedAndRemoveUntil(
+                  context, '/home', (route) => false
+                );
               },
             ),
           ],

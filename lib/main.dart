@@ -1,3 +1,4 @@
+import 'package:e_wallet/ui/pages/home_page.dart';
 import 'package:e_wallet/ui/pages/onboarding_page.dart';
 import 'package:e_wallet/ui/pages/signin_page.dart';
 import 'package:e_wallet/ui/pages/signup_page.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         '/sign-up' : (context) => SignUpPage(),
         '/sign-up-set-profile' : (context) => SignUpSetProfilePage(),
         '/sign-up-set-ktp' : (context) => SignUpSetKtpPage(),
-        '/sign-up-success' : (context) => SigUpSuccessPage()
+        '/sign-up-success' : (context) => SigUpSuccessPage(),
+        '/home' : (context) => HomePage(),
       },
     );
   }
