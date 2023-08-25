@@ -78,6 +78,7 @@ class HomePage extends StatelessWidget {
         ),
         children: [
           buildProfile(),
+          buildWalet(),
         ],
       ),
     );
@@ -139,6 +140,65 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildWalet(){
+    return Container(
+      width: double.infinity,
+      height: 220,
+      margin: const EdgeInsets.only(
+        top: 30,
+      ),
+      padding: const EdgeInsets.all(30),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(28),
+        image: const DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage(
+            'assets/img_bg_card.png',
+         ),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Pitbur Kapskaps',
+            style: whiteTextstyle.copyWith(
+              fontSize: 18,
+              fontWeight: medium,
+            ),
+          ),
+          const SizedBox(
+            height: 28,
+          ),
+          Text(
+            '**** **** **** 1280',
+            style: whiteTextstyle.copyWith(
+              fontSize: 18,
+              fontWeight: semiBold,
+              letterSpacing: 8,
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          Text(
+            'Balance',
+            style: whiteTextstyle.copyWith(
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            'RP 12.500',
+            style: whiteTextstyle.copyWith(
+              fontSize: 21,
+              fontWeight: semiBold,
             ),
           ),
         ],
